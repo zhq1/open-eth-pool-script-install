@@ -4,7 +4,7 @@
 #                           GOLANG                         #
 # **********************************************************
 
-VERSION="1.9.2"
+VERSION="1.10.3"
 
 print_help() {
     echo "Usage: bash goinstall.sh OPTIONS"
@@ -155,9 +155,7 @@ systemctl enable redis-server.service
 #                           Wacthman                       #
 # **********************************************************
 
-apt-get install libtool
-apt-get install m4
-apt-get install automake
+apt-get install -y autoconf automake build-essential python-dev libtool m4
 
 git clone https://github.com/facebook/watchman.git
 cd watchman
